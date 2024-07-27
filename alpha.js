@@ -125,7 +125,7 @@ async function Botstarted() {
     const alpha = WADefault({
         version,
         logger: pino({ level: "fatal" }).child({ level: "fatal" }),
-        printQRInTerminal: true, //ingin menggunakan pairing code true di ganti !pairingCode
+        printQRInTerminal: !pairingCode, //ingin menggunakan pairing code true di ganti !pairingCode
         mobile: useMobile, 
         browser: ['Chrome (Linux)', '', ''],
         auth: {
