@@ -18,7 +18,7 @@ const NodeCache = require("node-cache")
 const readline = require("readline")
 const { parsePhoneNumber } = require("libphonenumber-js")
 const pino = require('pino')
-const pairingCode = false
+const pairingCode = true
 //jika ingin menggunakan pairing code falsenya di ganti true
 const useMobile = false
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
